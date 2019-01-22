@@ -46,10 +46,12 @@ from Helper import PreProHelper as F
 # F.Data_Feature(data9).print()
 
 RAW_DATA__CSV = r"E:\OneDrive\Python\Data_Analysis\Raw Data\塑料圆柱体\\"
+Feature=np.zeros((50,10))
 for i in range(50):
-    data=np.loadtxt(open(RAW_DATA__CSV+i+1+".csv","rb",delimiter=",",skiprows=0))
-    Feature= F.Data_Feature(data).GetFeature()
-
+    data=np.loadtxt(open(RAW_DATA__CSV+str(i+1)+".csv","rb"),delimiter=",",skiprows=0)
+    Feature[i,:]= F.Data_Feature(data).GetFeature()
+print(Feature)
+#np.savetxt(E:\OneDrive\Python\Data_Analysis\Pre_Data+"name"+".csv", np_Matrix, delimiter=',')
 
 
 

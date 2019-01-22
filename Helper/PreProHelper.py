@@ -25,9 +25,9 @@ class Data_Feature():
         print(round(self.Max,2), round(self.MaxSiteNumber,2),round(self.MaxSiteTime,2),self.Hash0,self.Hash1,self.Hash2,self.Hash3,round(self.NumTorch,2),round(self.Sum,2),round(self.TimeTorch,2))
 
     def NumTorch(self,Matrix):
-        return (np.sum(Matrix[79] > 0))
+        return (np.sum(Matrix[78] > 0))
     def Sum(self,Matrix):
-        return (np.sum(Matrix[79]))
+        return (np.sum(Matrix[78]))
 
     def STRTOHEX(self,str):
         data = str
