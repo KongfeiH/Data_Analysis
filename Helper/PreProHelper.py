@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 from scipy.signal import medfilt,filtfilt,wiener,detrend
 import cv2
-class filter():
+class Data_Feature():
     def __init__(self,Matrix):
         Matrix = Matrix - Matrix[0, :]
         Matrix = self.MatMedfilt(Matrix)
@@ -75,3 +75,17 @@ class filter():
         while  0!=Matrix[p-1,self.MaxSiteNumber]:
             p=(p-1)
         return p
+
+    def GetFeature(self):
+        return np.array([self.Max, \
+                         self.MaxSiteNumber,\
+                         self.MaxSiteTime, \
+                         self.Hash0,  self.Hash1,  self.Hash2,  self.Hash3,\
+                         self.NumTorch,\
+                         self.Sum,\
+                         self.TimeTorch])
+
+
+
+
+
