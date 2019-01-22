@@ -45,14 +45,14 @@ from Helper import PreProHelper as F
 # F.Data_Feature(data8).print()
 # F.Data_Feature(data9).print()
 
-RAW_DATA__CSV = r"E:\OneDrive\Python\Data_Analysis\Raw Data\姿态\塑料圆柱体\\"
-PreDataName="塑料圆柱体"
-Feature=np.zeros((50,10))
-for i in range(50):
-    data=np.loadtxt(open(RAW_DATA__CSV+str(i+1)+".csv","rb"),delimiter=",",skiprows=0)
-    Feature[i,:]= F.Data_Feature(data).GetFeature()
-print(Feature)
-np.savetxt("E:\OneDrive\Python\Data_Analysis\Pre Data\姿态\\"+PreDataName+".csv", Feature, delimiter=',')
+# RAW_DATA__CSV = r"E:\OneDrive\Python\Data_Analysis\Raw Data\姿态\塑料圆柱体\\"
+# PreDataName="塑料圆柱体"
+# Feature=np.zeros((50,10))
+# for i in range(50):
+#     data=np.loadtxt(open(RAW_DATA__CSV+str(i+1)+".csv","rb"),delimiter=",",skiprows=0)
+#     Feature[i,:]= F.Data_Feature(data).GetFeature()
+# print(Feature)
+# np.savetxt("E:\OneDrive\Python\Data_Analysis\Pre Data\姿态\\"+PreDataName+".csv", Feature, delimiter=',')
 
 
 

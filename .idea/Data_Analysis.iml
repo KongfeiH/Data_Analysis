@@ -5,7 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Raw Data" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pre Data" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Helper" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Final_Data" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Final Data" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
